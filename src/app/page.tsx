@@ -7,7 +7,6 @@ import InstagramLogo from '../assets/instagram.svg';
 import TwitterLogo from '../assets/x.svg';
 import LinkedInLogo from '../assets/linkedin.svg';
 
-
 const GridPage: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -40,6 +39,24 @@ const GridPage: React.FC = () => {
                 </nav>
               )}
             </>
+          )}
+          {index === 6 && (
+            <div className={styles.whiteBoxAlt}>
+              <p>
+                A new style of white box | @house of priviledge.xyz |
+              </p>
+              <div className={styles.socialMediaIconsAlt}>
+                <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">
+                  <img src={TwitterLogo.src} alt="X" className={styles.iconAlt} />
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <img src={LinkedInLogo.src} alt="LinkedIn" className={styles.iconAlt} />
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                  <img src={InstagramLogo.src} alt="Instagram" className={styles.iconAlt} />
+                </a>
+              </div>
+            </div>
           )}
           {index === 30 && (
             <div className={styles.whiteBox}>

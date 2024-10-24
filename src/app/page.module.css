@@ -204,6 +204,7 @@
   font-weight: normal;
 }
 
+/* Social media icons */
 .socialMediaIcons {
   display: flex;
   gap: 15px;
@@ -218,4 +219,47 @@
 
 .socialMediaIcons img:hover {
   transform: scale(1.1);
+}
+
+/* New White Box for index 6 */
+.whiteBoxAlt {
+  grid-column: span 6;
+  grid-row: 2;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  height: 700px;
+  width: 1250px;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  right: 100px;
+  z-index: 10;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whiteBoxAlt p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.socialMediaIconsAlt {
+  display: flex;
+  gap: 10px;
+}
+
+.iconAlt {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.iconAlt:hover {
+  transform: scale(1.2);
 }
